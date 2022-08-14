@@ -3,11 +3,12 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from './config/config.module';
-import {ConfigService} from "./config/config.service";
-import {ConfigKeys} from "./config/config.keys";
+import { ConfigService } from './config/config.service';
+import { ConfigKeys } from './config/config.keys';
+import { UserModule } from './modules/user/user.module';
 
 @Module({
-  imports: [DatabaseModule, ConfigModule],
+  imports: [DatabaseModule, ConfigModule, UserModule],
   controllers: [AppController],
   providers: [AppService],
 })
