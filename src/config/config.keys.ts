@@ -1,0 +1,9 @@
+export enum ConfigKeys {
+  DB_PORT = 'DB_PORT',
+  DB_USER_NAME = 'DB_USERNAME',
+  DB_PASSWORD = 'DB_PASSWORD',
+  DB_DRIVER = 'DB_DRIVER',
+  DB_DATABASE = 'DB_DATABASE',
+  PORT = 'PORT',
+  DB_HOST= 'DB_HOST',
+}

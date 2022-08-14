@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  mysql_db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: api_od
+  adminer_mysql:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
